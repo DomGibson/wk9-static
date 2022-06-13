@@ -1,0 +1,203 @@
+body {
+    background-color: #292929;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* All headings on each page */
+#heading1 {
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    color: white;
+    transition-duration: .2s;
+}
+#heading2 {
+    color: white;
+    transition-duration: .2s;
+    font-style: normal;
+    margin-left: 15px;
+}
+#para1 {
+    color: white;
+    transition-duration: .2s;
+    font-style: normal;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/* Navbar for /home */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-left: 70%;
+    margin-right: 0;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 8px;
+  }
+  .topnav a.active {
+    background-color: #c35353;
+    color: white;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+/* START OF GRID *//* START OF GRID *//* START OF GRID */
+
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "image1 image2 image3"
+      "image4 image5 image5"
+      "image6 image7 image8"
+      "image9 image9 image10"
+      "image11 image12 image13";
+      margin: 100px;
+  }
+  .image1 { grid-area: image1;
+    border: solid white;
+    border-radius: 8px;
+    height: 250px;
+    width: 100%;
+}
+  .image2 { grid-area: image2; 
+    border: solid white;
+    border-radius: 8px;
+    height: 250px;
+    width: 100%;
+}
+  .image3 { grid-area: image3; 
+    border: solid white;
+    border-radius: 8px;
+    height: 250px;
+    width: 100%;
+}
+  .image4 { grid-area: image4; 
+    border: solid white;
+    border-radius: 8px;
+    height: 250px;
+    width: 100%;
+}
+  .image5 { grid-area: image5; 
+    border: solid white;
+    border-radius: 8px;
+    height: 250px;
+    width: 100%;
+}
+  .image6 { grid-area: image6; 
+    border: solid white;
+    border-radius: 8px;
+    height: 250px;
+    width: 100%;
+}
+  .image7 { grid-area: image7; 
+    border: solid white;
+    border-radius: 8px;
+    height: 250px;
+    width: 100%;
+}
+  .image8 { grid-area: image8; 
+    border: solid white;
+    border-radius: 8px;
+    height: 250px;
+    width: 100%;
+}
+  .image9 { grid-area: image9; 
+    border: solid white;
+    border-radius: 8px;
+    height: 250px;
+    width: 100%;
+}
+  .image10 { grid-area: image10; 
+    border: solid white;
+    border-radius: 8px;
+    height: 250px;
+    width: 100%;
+}
+  .image11 { grid-area: image11; 
+    border: solid white;
+    border-radius: 8px;
+    height: 250px;
+    width: 100%;
+}
+  .image12 { grid-area: image12; 
+    border: solid white;
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+}
+  .image13 { grid-area: image13; 
+    border: solid white;
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+}
+/* END OF GRID *//* END OF GRID *//* END OF GRID */
+
+
+
+/* ensuring images fill boxes but not exit boundries */
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    width: 50px;
+    height: 100px;
+}
+
+/* /home styling */
+.home-container {
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.home-cards {
+    flex: 1;
+    border: solid rgb(255, 255, 255);
+    max-width: 350px;
+    height: 480px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-radius: 8px;
+}
+
+.home-card-img {
+    height: 200px;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
